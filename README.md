@@ -18,3 +18,7 @@ Analizar reseñas de clientes y clasificarlas en positivas, negativas o neutras 
 
 ## Flujo de arquitectura
 Dataset → S3 → Glue → Athena/Redshift → SageMaker → Lambda → S3/Redshift → QuickSight
+
+## Dataset
+Usamos un dataset reducido de reseñas (IMDB small, ~5MB) con etiquetas de sentimiento.  
+El archivo se almacena en `s3://sentiment-analysis-ds-project/raw/imdb_small.csv`.
